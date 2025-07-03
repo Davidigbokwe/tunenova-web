@@ -28,7 +28,7 @@ const Footer = () => {
   const linkHoverStyle = "transition-all duration-300 hover:text-white/90 relative group cursor-pointer";
 
   return (
-    <footer className="bg-gradient-to-br from-[#e10032] via-[#c8002d] to-[#a00025] text-white">
+    <footer className="bg-gradient-to-br from-[#e10032] via-[#c8002d] to-[#a00025] text-white" id='footer'>
       {/* Main Footer Content */}
       <div className="py-16 px-6 md:px-12 lg:px-24">
         <motion.div 
@@ -164,7 +164,7 @@ const Footer = () => {
                   whileHover={{ x: 8 }} 
                   transition={{ type: "spring", stiffness: 400 }}
                 >
-                  <a href="#" className={linkHoverStyle}>
+                  <a href="/privacy" className={linkHoverStyle}>
                     <span className="relative">
                       Privacy Policy
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
@@ -175,7 +175,7 @@ const Footer = () => {
                   whileHover={{ x: 8 }} 
                   transition={{ type: "spring", stiffness: 400 }}
                 >
-                  <a href="#" className={linkHoverStyle}>
+                  <a href="/terms" className={linkHoverStyle}>
                     <span className="relative">
                       Terms of Use
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>

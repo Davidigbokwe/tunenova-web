@@ -61,7 +61,7 @@ const HowItWorksArtists = () => {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <Image 
-                src="/dashboard3.svg" 
+                src="/artists.png" 
                 alt="IMAGE" 
                 className="w-full h-auto rounded-lg"
                 width={1000}
@@ -72,12 +72,12 @@ const HowItWorksArtists = () => {
 
           {/* Right section - Process steps */}
           <motion.div {...fadeIn} className="relative">
-            {/* Timeline line connecting all steps on all screen sizes */}
+            {/* Timeline line connecting all steps */}
             <div 
               className="absolute left-8 w-2 bg-[#e10032]" 
               style={{
-                top: '24px',
-                height: 'calc(100% - 48px)'
+                top: '32px',
+                height: 'calc(100% - 100px)'
               }}
             ></div>
             

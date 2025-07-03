@@ -20,7 +20,8 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '#about' },
-    { name: 'Artists', href: '#artists' },
+    { name: 'How It Works', href: '#how-it-works' },
+    { name: 'Contact', href: '#footer' },
   ];
   
   const linkVariants = {
@@ -39,7 +40,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            {/* <Link href="/" className="relative">
+            <Link href="/" className="relative">
               <Image
                 src="/logo.png" // Replace with your actual logo path
                 alt="ShopNsure Logo"
@@ -48,7 +49,7 @@ const Navbar = () => {
                 priority
                 className="h-auto w-36"
               />
-            </Link> */}
+            </Link>
           </motion.div>
           
           {/* Desktop Navigation Links */}

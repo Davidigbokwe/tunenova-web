@@ -36,7 +36,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <div className="px-6 md:px-12 lg:px-24 bg-gray-50" id='work'>
+    <div className="px-6 md:px-12 lg:px-24 bg-gray-50" id='how-it-works'>
       <div className="max-w-7xl mx-auto">
         <motion.div 
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
@@ -62,7 +62,7 @@ const HowItWorks = () => {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <Image 
-                src="/dashboard3.svg" 
+                src="/fans.png" 
                 alt="IMAGE" 
                 className="w-full h-auto rounded-lg"
                 width={1000}
