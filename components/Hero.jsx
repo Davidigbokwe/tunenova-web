@@ -62,24 +62,28 @@ const HeroSection = () => {
               animate="show"
               variants={container}
             >
-              <motion.h1 
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 md:mb-4"
+              <motion.div
+                className="flex flex-col items-center md:items-start w-full mb-4"
                 variants={textItem}
-                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
-                Break New Music
-              </motion.h1>
-              <motion.h2 
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 text-[#e10032]"
-                variants={textItem}
-                whileHover={{ 
-                  scale: 1.03, 
-                  textShadow: "0 0 20px rgba(239, 68, 68, 0.5)",
-                  transition: { duration: 0.2 } 
-                }}
-              >
-                Listen & Earn.
-              </motion.h2>
+                <motion.h1 
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-lg text-white text-center md:text-left"
+                  whileHover={{ scale: 1.04, transition: { duration: 0.2 } }}
+                >
+                  Break New Music
+                </motion.h1>
+                <span className="block w-12 h-1 rounded-full bg-gradient-to-r from-[#e10032] to-[#c1002b] my-2 mx-auto md:mx-0" />
+                <motion.h2 
+                  className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#e10032] via-[#ff3366] to-[#c1002b] bg-clip-text text-transparent animate-pulse text-center md:text-left"
+                  whileHover={{ 
+                    scale: 1.03, 
+                    textShadow: '0 0 20px rgba(239, 68, 68, 0.5)',
+                    transition: { duration: 0.2 } 
+                  }}
+                >
+                  Listen & Earn.
+                </motion.h2>
+              </motion.div>
               <motion.p 
                 className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 md:mb-8 opacity-90"
                 variants={textItem}
@@ -98,11 +102,11 @@ const HeroSection = () => {
                     transition: { duration: 0.2 }
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full sm:w-auto"
+                  className="sm:w-auto"
                 >
                   <Link
                     href="#"
-                    className="bg-gradient-to-r from-gray-900 to-black text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl font-semibold flex items-center gap-2 hover:from-gray-800 hover:to-gray-900 transition-all duration-300 relative overflow-hidden min-w-[140px] sm:min-w-[160px] w-full sm:w-auto justify-center border border-gray-700 shadow-lg"
+                    className="bg-gradient-to-r from-gray-900 to-black text-white px-4 py-2.5 sm:px-4 sm:py-3 rounded-xl font-semibold flex items-center gap-2 hover:from-gray-800 hover:to-gray-900 transition-all duration-300 relative overflow-hidden justify-center border border-gray-700 shadow-lg mx-auto"
                   >
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-700" />
@@ -138,11 +142,11 @@ const HeroSection = () => {
                       delay: 0.5
                     }
                   }}
-                  className="w-full sm:w-auto"
+                  className="sm:w-auto"
                 >
                   <Link
                     href="#"
-                    className="bg-gradient-to-r from-[#e10032] to-[#c1002b] text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl font-semibold flex items-center gap-2 hover:from-[#c1002b] hover:to-[#a1001f] transition-all duration-300 relative overflow-hidden min-w-[140px] sm:min-w-[160px] w-full sm:w-auto justify-center border border-[#e10032]/30 shadow-lg"
+                    className="bg-gradient-to-r from-[#e10032] to-[#c1002b] text-white px-4 py-2.5 sm:px-4 sm:py-3 rounded-xl font-semibold flex items-center gap-2 hover:from-[#c1002b] hover:to-[#a1001f] transition-all duration-300 relative overflow-hidden justify-center border border-[#e10032]/30 shadow-lg mx-auto"
                   >
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-700" />
