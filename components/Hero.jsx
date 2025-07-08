@@ -194,7 +194,7 @@ const HeroSection = () => {
           }}
         />
       </motion.div>
-      {/* Right side - Image */}
+      {/* Right side - Image --*/}
       <motion.div 
         className="flex-1 bg-contain bg-center bg-no-repeat relative overflow-hidden min-h-[220px] sm:min-h-[250px] md:min-h-0 flex items-center justify-center"
         style={{ backgroundImage: 'url("/hero.png")' }}
