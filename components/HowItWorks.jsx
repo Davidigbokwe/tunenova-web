@@ -57,7 +57,7 @@ const HowItWorks = () => {
             
             {/* Dashboard Image */}
             <motion.div 
-              className="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-2xl shadow-lg border border-red-100"
+              className=""
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
