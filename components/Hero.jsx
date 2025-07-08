@@ -46,24 +46,24 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="overflow-hidden rounded-3xl mx-2 sm:mx-4 md:mx-8 lg:mx-12 h-[70vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] flex flex-col md:flex-row">
+    <section className="overflow-hidden rounded-3xl mx-2 sm:mx-4 md:mx-8 lg:mx-12 h-auto min-h-[60vh] flex flex-col md:flex-row">
       {/* Left side - Black background with content */}
       <motion.div 
-        className="bg-black text-white flex-1 relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
+        className="bg-black text-white flex-1 relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none min-h-[320px] flex items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="h-full flex items-center relative z-10">
+        <div className="h-full flex items-center relative z-10 w-full">
           <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 md:py-16 lg:py-20 w-full">
             <motion.div 
-              className="max-w-lg w-full text-center md:text-left flex flex-col justify-center"
+              className="max-w-lg w-full text-center md:text-left flex flex-col justify-center mx-auto md:mx-0"
               initial="hidden"
               animate="show"
               variants={container}
             >
               <motion.h1 
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 sm:mb-3 md:mb-4"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 md:mb-4"
                 variants={textItem}
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
@@ -162,7 +162,6 @@ const HeroSection = () => {
             </motion.div>
           </div>
         </div>
-        
         {/* Floating elements animation on black side */}
         <motion.div
           className="absolute top-6 left-4 sm:top-10 sm:left-10 w-3 h-3 sm:w-4 sm:h-4 bg-[#e10032] rounded-full opacity-60"
@@ -191,19 +190,14 @@ const HeroSection = () => {
           }}
         />
       </motion.div>
-      
       {/* Right side - Image */}
       <motion.div 
-        className="flex-1 bg-cover bg-center bg-no-repeat relative overflow-hidden rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none min-h-[200px] sm:min-h-[250px] md:min-h-0 border-2 border-black"
-        style={{ 
-          backgroundImage: 'url("/hero.png")'
-        }}
+        className="flex-1 bg-contain bg-center bg-no-repeat relative overflow-hidden min-h-[220px] sm:min-h-[250px] md:min-h-0 flex items-center justify-center"
+        style={{ backgroundImage: 'url("/hero.png")' }}
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        {/* Optional overlay for better contrast if needed */}
-        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black/20 via-transparent to-transparent md:from-transparent md:via-black/10 md:to-black/30 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none" />
       </motion.div>
     </section>
   );

@@ -74,7 +74,7 @@ const AboutSection = () => {
             Tunenova is where fans get rewarded for discovering new music, and artists finally get a platform built to help them grow.
           </motion.p>
           
-          {/* Highlighted Features -*/}
+          {/* Highlighted Features */}
           <motion.div 
             variants={fadeInUp}
             className="mb-12 max-w-3xl mx-auto"
