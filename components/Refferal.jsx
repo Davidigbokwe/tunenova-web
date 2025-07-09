@@ -148,6 +148,10 @@ const InviteEarnSection = () => {
               className="inline-flex items-center gap-3 bg-[#e10032] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-red-600 transition-colors duration-300 cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                const hero = document.getElementById('hero');
+                if (hero) hero.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               <Share2 className="w-5 h-5" />
               Start Inviting Friends

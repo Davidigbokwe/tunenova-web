@@ -46,7 +46,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="overflow-hidden rounded-3xl mx-2 sm:mx-4 md:mx-8 lg:mx-12 h-auto min-h-[60vh] flex flex-col md:flex-row">
+    <section id="hero" className="overflow-hidden rounded-3xl mx-2 sm:mx-4 md:mx-8 lg:mx-12 h-auto min-h-[60vh] flex flex-col md:flex-row">
       {/* Left side - Black background with content */}
       <motion.div 
         className="bg-black text-white flex-1 relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none min-h-[320px] flex items-center"
@@ -142,7 +142,9 @@ const HeroSection = () => {
                   className="sm:w-auto"
                 >
                   <Link
-                    href="#"
+                    href="https://play.google.com/store/apps/details?id=com.caribou97499.tunenova"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gradient-to-r from-[#e10032] to-[#c1002b] text-white px-4 py-2.5 sm:px-4 sm:py-3 rounded-xl font-semibold flex items-center gap-2 hover:from-[#c1002b] hover:to-[#a1001f] transition-all duration-300 relative overflow-hidden justify-center border border-[#e10032]/30 shadow-lg mx-auto"
                   >
                     {/* Shimmer effect */}

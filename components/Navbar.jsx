@@ -105,7 +105,9 @@ const Navbar = () => {
                       </div>
                     </Link>
                     <Link
-                      href="#"
+                      href="https://play.google.com/store/apps/details?id=com.caribou97499.tunenova"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-[#e10032] transition-colors"
                       onClick={() => setIsDropdownOpen(false)}
                     >
@@ -168,7 +170,9 @@ const Navbar = () => {
                   Download for iOS
                 </Link>
                 <Link
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.caribou97499.tunenova"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-gray-100 text-gray-700 px-4 py-2 rounded-md text-center hover:bg-gray-200 transition-colors duration-300 cursor-pointer flex items-center justify-center gap-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
