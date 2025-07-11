@@ -3,6 +3,7 @@ import React from 'react';
 import { Instagram, Facebook, Mail, Phone, MapPin, Shield, Music } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const containerVariants = {
@@ -30,7 +31,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-[#e10032] via-[#c8002d] to-[#a00025] text-white" id='footer'>
       {/* Main Footer Content */}
-      <div className="py-16 px-6 md:px-12 lg:px-24">
+      <div className="pt-10 pb-2 px-6 md:px-12 lg:px-24">
         <motion.div 
           className="max-w-7xl mx-auto"
           initial="hidden"
@@ -94,63 +95,67 @@ const Footer = () => {
               <motion.h3 className="text-lg md:text-xl font-semibold mb-6 text-white">
                 Quick Links
               </motion.h3>
-              <ul className="space-y-4">
-                <motion.li 
-                  whileHover={{ x: 8 }} 
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <a href="#about" className={linkHoverStyle}>
-                    <span className="relative">
-                      About
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
-                </motion.li>
-                <motion.li 
-                  whileHover={{ x: 8 }} 
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <a href="#work" className={linkHoverStyle}>
-                    <span className="relative">
-                      How it Works
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
-                </motion.li>
-                <motion.li 
-                  whileHover={{ x: 8 }} 
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <a href="#artists" className={linkHoverStyle}>
-                    <span className="relative">
-                      For Artists
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
-                </motion.li>
-                <motion.li 
-                  whileHover={{ x: 8 }} 
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <a href="#" className={linkHoverStyle}>
-                    <span className="relative">
-                      Help Center
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
-                </motion.li>
-                <motion.li 
-                  whileHover={{ x: 8 }} 
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <a href="#contact" className={linkHoverStyle}>
-                    <span className="relative">
-                      Contact Us
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
-                </motion.li>
-              </ul>
+              <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
+                <ul className="space-y-4">
+                  <motion.li 
+                    whileHover={{ x: 8 }} 
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <a href="#about" className={linkHoverStyle}>
+                      <span className="relative">
+                        About
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </a>
+                  </motion.li>
+                  <motion.li 
+                    whileHover={{ x: 8 }} 
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <a href="#work" className={linkHoverStyle}>
+                      <span className="relative">
+                        How it Works
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </a>
+                  </motion.li>
+                  <motion.li 
+                    whileHover={{ x: 8 }} 
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <a href="#artists" className={linkHoverStyle}>
+                      <span className="relative">
+                        For Artists
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </a>
+                  </motion.li>
+                </ul>
+                <ul className="space-y-4">
+                  <motion.li 
+                    whileHover={{ x: 8 }} 
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <a href="#" className={linkHoverStyle}>
+                      <span className="relative">
+                        Help Center
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </a>
+                  </motion.li>
+                  <motion.li 
+                    whileHover={{ x: 8 }} 
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <a href="#contact" className={linkHoverStyle}>
+                      <span className="relative">
+                        Contact Us
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </a>
+                  </motion.li>
+                </ul>
+              </div>
             </motion.div>
 
             {/* Legal Section - Smaller space */}
@@ -198,33 +203,47 @@ const Footer = () => {
               {/* Social Links */}
               <div className="flex gap-4 mb-8">
                 <motion.a 
-                  href="#" 
+                  href="https://www.instagram.com/tunenovaapp" 
                   aria-label="Instagram"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
                   whileHover={{ y: -3, scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <Instagram size={20} />
                 </motion.a>
                 <motion.a 
-                  href="#" 
-                  aria-label="Facebook"
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
-                  whileHover={{ y: -3, scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Facebook size={20} />
-                </motion.a>
-                <motion.a 
-                  href="#" 
+                  href="https://x.com/tunenovaapp" 
                   aria-label="Twitter"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
                   whileHover={{ y: -3, scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
                   </svg>
+                </motion.a>
+                {/* LinkedIn */}
+                <motion.a 
+                  href="https://www.linkedin.com/company/tunenova/" 
+                  aria-label="LinkedIn"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
+                  whileHover={{ y: -3, scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <Linkedin size={20} />
+                </motion.a>
+                <motion.a 
+                  href="https://www.facebook.com/profile.php?id=61578041260432" 
+                  aria-label="Facebook"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
+                  whileHover={{ y: -3, scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <Facebook size={20} />
                 </motion.a>
               </div>
             </motion.div>
