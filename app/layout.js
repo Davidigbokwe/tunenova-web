@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   description: "Break new music. Earn up to N150,000 monthly.",
-  title: "Tunenova:Break New Music. Listen & Earn.",
+  title: "Tunenova: Discover New Music. Listen & Earn.",
 };
 
 export default function RootLayout({ children }) {
