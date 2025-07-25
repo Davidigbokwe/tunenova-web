@@ -259,7 +259,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <motion.p className="text-white/60 text-sm text-center md:text-left">
-              © 2025 Tunenova. All rights reserved.
+              © 2025 Tunenova. Product of Hallait Technologies
             </motion.p>
             
             <div className="flex items-center gap-6 text-sm">
