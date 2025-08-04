@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -8,6 +8,7 @@ import Link from 'next/link';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +17,20 @@ const Navbar = () => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -68,7 +83,7 @@ const Navbar = () => {
             ))}
             
             {/* Download App Dropdown - This is now the main CTA */}
-            <div className="relative">
+            <div className="relative" ref={dropdownRef}>
               <motion.button
                 onClick={toggleDropdown}
                 className="bg-[#e10032] text-white px-6 py-2 rounded-md hover:bg-red-600 transition-colors duration-300 cursor-pointer flex items-center gap-2"
@@ -92,7 +107,9 @@ const Navbar = () => {
                 >
                   <div className="py-2">
                     <Link
-                      href="#"
+                      href="https://apps.apple.com/app/tunenova-listen-and-earn/id6748253966"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-[#e10032] transition-colors"
                       onClick={() => setIsDropdownOpen(false)}
                     >
@@ -160,7 +177,9 @@ const Navbar = () => {
               {/* Mobile Download Options - Now as main CTA */}
               <div className="pt-4 border-t border-gray-200">
                 <Link
-                  href="#"
+                  href="https://apps.apple.com/app/tunenova-listen-and-earn/id6748253966"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#e10032] text-white px-4 py-2 rounded-md text-center hover:bg-red-600 transition-colors duration-300 cursor-pointer flex items-center justify-center gap-2 mb-3"
                   onClick={() => setIsMenuOpen(false)}
                 >

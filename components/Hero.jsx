@@ -102,7 +102,9 @@ const HeroSection = () => {
                   className="sm:w-auto"
                 >
                   <Link
-                    href="#"
+                    href="https://apps.apple.com/app/tunenova-listen-and-earn/id6748253966"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gradient-to-r from-gray-900 to-black text-white px-4 py-2.5 sm:px-4 sm:py-3 rounded-xl font-semibold flex items-center gap-2 hover:from-gray-800 hover:to-gray-900 transition-all duration-300 relative overflow-hidden justify-center border border-gray-700 shadow-lg mx-auto"
                   >
                     {/* Shimmer effect */}
