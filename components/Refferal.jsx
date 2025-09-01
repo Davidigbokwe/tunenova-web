@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Share2, UserPlus, DollarSign, Award, ArrowRight } from 'lucide-react';
+import { Share2, UserPlus, DollarSign, Award, ArrowRight, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const InviteEarnSection = () => {
@@ -138,26 +138,37 @@ const InviteEarnSection = () => {
           </motion.div>
 
           {/* CTA */}
-          <motion.div 
+          <motion.div
             className="text-center"
-            initial={{ y: 20, opacity: 0 }} 
-            animate={{ y: 0, opacity: 1 }} 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.div 
-              className="inline-flex items-center gap-3 bg-[#e10032] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-red-600 transition-colors duration-300 cursor-pointer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => {
-                const hero = document.getElementById('hero');
-                if (hero) hero.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              <Share2 className="w-5 h-5" />
-              Start Inviting Friends
-              <ArrowRight className="w-5 h-5" />
-            </motion.div>
-            <p className="text-sm text-gray-500 mt-3">
+            <div className="flex justify-center gap-4 flex-wrap mb-4">
+              <motion.div
+                className="inline-flex items-center gap-3 bg-[#e10032] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-red-600 transition-colors duration-300 cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  const hero = document.getElementById('hero');
+                  if (hero) hero.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                <Share2 className="w-5 h-5" />
+                Start Inviting Friends
+                <ArrowRight className="w-5 h-5" />
+              </motion.div>
+              <motion.div
+                className="inline-flex items-center gap-3 bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-green-700 transition-colors duration-300 cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://chat.whatsapp.com/CDNwWlNKBRo9N8OKR2csCY?mode=ems_copy_c', '_blank')}
+              >
+                <MessageCircle className="w-5 h-5" />
+                Join our WhatsApp Group
+              </motion.div>
+            </div>
+            <p className="text-sm text-gray-500">
               Join thousands earning with Tunenova referrals
             </p>
           </motion.div>
