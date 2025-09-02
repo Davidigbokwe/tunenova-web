@@ -60,7 +60,7 @@ const HowItWorksArtists = () => {
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-900">How it Works - Artists</h1>
             </div>
             <p className="text-gray-700 text-base mb-8 text-center lg:text-left">
-              Promote your music to real listeners and grow your fanbase organically.
+              Promote your music to real listeners and grow your fanbase on Spotify, YouTube, and Apple Music.
             </p>
             
             {/* Dashboard Image */}
