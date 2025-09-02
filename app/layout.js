@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   description: "Break new music. Earn up to N150,000 monthly.",
-  title: "Tunenova: Discover New Music. Listen & Earn.",
+  title: "Promote your music to real listeners and grow your fanbase on Spotify, YouTube, and Apple Music.",
 };
 
 export default function RootLayout({ children }) {
