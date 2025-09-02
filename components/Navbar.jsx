@@ -34,9 +34,10 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#about' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Contact', href: '#footer' },
+    { name: 'Artists', href: '/artists' },
+    { name: 'About', href: '/#about' },
+    { name: 'How It Works', href: '/#how-it-works' },
+    { name: 'Contact', href: '/#footer' },
   ];
   
   const linkVariants = {

@@ -119,11 +119,11 @@ const Footer = () => {
                       </span>
                     </a>
                   </motion.li>
-                  <motion.li 
-                    whileHover={{ x: 8 }} 
+                  <motion.li
+                    whileHover={{ x: 8 }}
                     transition={{ type: "spring", stiffness: 400 }}
                   >
-                    <a href="#artists" className={linkHoverStyle}>
+                    <a href="/artists" className={linkHoverStyle}>
                       <span className="relative">
                         For Artists
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full"></span>

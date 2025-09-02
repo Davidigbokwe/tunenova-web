@@ -74,8 +74,8 @@ const HowItWorks = () => {
           {/* Right section - Process steps */}
           <motion.div {...fadeIn} className="relative">
             {/* Timeline line connecting all steps on all screen sizes */}
-            <div 
-              className="absolute left-8 w-2 bg-[#e10032]" 
+            <div
+              className="absolute left-8 w-2 bg-[#e10032]"
               style={{
                 top: '24px',
                 height: 'calc(100% - 48px)'
@@ -95,7 +95,7 @@ const HowItWorks = () => {
                 >
                   {/* Icon circle */}
                   <div className="flex-shrink-0 mt-1 z-10">
-                    <motion.div 
+                    <motion.div
                       className="w-16 h-16 rounded-full bg-[#e10032] text-white flex items-center justify-center shadow-lg"
                       whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(239, 68, 68, 0.3)" }}
                       transition={{ type: "spring", stiffness: 400 }}
