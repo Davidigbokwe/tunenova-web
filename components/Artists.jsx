@@ -21,7 +21,7 @@ const HowItWorksArtists = () => {
     {
       icon: <Target className="w-6 h-6" />,
       title: "Set Your Campaign Budget",
-      description: "With just ₦20,000, you can reach over 1,200+ real listeners who will hear your song and may stream more.",
+      description: "With just ₦20,000, you can reach over 1,200+ real listeners who will hear your song and stream more.",
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -69,9 +69,9 @@ const HowItWorksArtists = () => {
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <Image 
-                src="/artists.png" 
-                alt="IMAGE" 
+              <Image
+                src="/artists.png"
+                alt="IMAGE"
                 className="w-full h-auto rounded-lg"
                 width={1000}
                 height={1000}
