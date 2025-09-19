@@ -56,7 +56,7 @@ const FansHowItWorks = () => {
             </div>
 
             <p className="text-gray-700 text-base mb-8 text-center lg:text-left">
-              Give feedback and earn money for your time and attention.
+              Earn money discovering new music
             </p>
 
             {/* Dashboard Image */}
@@ -66,7 +66,7 @@ const FansHowItWorks = () => {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <Image
-                src="/fans.png"
+                src="/artists.png"
                 alt="IMAGE"
                 className="w-full h-auto rounded-lg"
                 width={1000}
@@ -133,7 +133,7 @@ const FansHowItWorks = () => {
                 onClick={scrollToHero}
                 className="bg-[#e10032] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#c1002b] transition-colors duration-300 shadow-lg hover:shadow-xl"
               >
-                Launch a Campaign
+                Start Earning
               </button>
             </motion.div>
           </motion.div>

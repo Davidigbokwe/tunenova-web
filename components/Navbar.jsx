@@ -46,7 +46,6 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Fans', href: '/fans' },
     { name: 'How it works', href: '/fans#how-it-works' },
-    { name: 'Community', href: 'https://chat.whatsapp.com/CDNwWlNKBRo9N8OKR2csCY?mode=ems_copy_c' },
     { name: 'Contact', href: '/fans#footer' },
   ];
 

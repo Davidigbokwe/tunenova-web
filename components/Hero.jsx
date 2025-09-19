@@ -199,7 +199,7 @@ const HeroSection = () => {
       {/* Right side -- Image */}
       <motion.div 
         className="flex-1 bg-contain bg-center bg-no-repeat relative overflow-hidden min-h-[220px] sm:min-h-[250px] md:min-h-0 flex items-center justify-center"
-        style={{ backgroundImage: 'url("/hero.png")' }}
+        style={{ backgroundImage: 'url("/fans.png")' }}
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}

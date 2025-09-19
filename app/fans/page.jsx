@@ -4,6 +4,10 @@
  import FansHowItWorks from '@/components/FansHowItWorks'
  import FansRefferal from '@/components/FansRefferal'
  import Footer from '@/components/Footer'
+
+ export const metadata = {
+   title: 'Discover New Music, Listen & Earn',
+ };
  export default function page() {
    return (
      <div>

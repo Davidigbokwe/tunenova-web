@@ -67,7 +67,7 @@ const FansHeroSection = () => {
                 variants={textItem}
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
-                Give Feedback
+                Discover New Music
               </motion.h1>
               <span className="block w-12 sm:w-16 h-1 rounded-full bg-gradient-to-r from-[#e10032] via-[#ff3c6f] to-[#c1002b] mx-auto md:mx-0 mb-2 sm:mb-3" />
               <motion.h2

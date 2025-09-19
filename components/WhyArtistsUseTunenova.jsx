@@ -28,10 +28,10 @@ const WhyArtistsUseTunenova = () => {
           variants={fadeIn}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Artists Use Tunenova
+            Tunenova's Impact
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join thousands of artists who have transformed their careers with real fan feedback and data-driven insights.
+            Join thousands of artists growing their artists on Spotify, Youtube and Apple Music.
           </p>
         </motion.div>
 

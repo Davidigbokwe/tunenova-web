@@ -35,18 +35,18 @@ const HowItWorksArtists = () => {
     {
       icon: <TrendingUp className="w-6 h-6" />,
       title: "Publish your campaign.",
-      description: "Launch your campaign and start reaching new fans.",
-    },
-    {
-      icon: <MessageCircle className="w-6 h-6" />,
-      title: "Check the platform's analytics page to see how your songs are performing.",
-      description: "Monitor your campaign's performance with detailed analytics.",
+      description: "Launch your campaign and start growing your fanbase on Spotify, Youtube and Apple Music.",
     },
     {
       icon: <Upload className="w-6 h-6" />,
-      title: "You can also use the platform to test your songs to see if fans like, then launch your campaign.",
-      description: "Test your music with fans before going live with your full campaign.",
-    }
+      title: "Check the platform's analytics page to see how your songs are performing.",
+      description: "Monitor your campaign's performance with detailed analytics.",
+    },
+    // {
+    //   icon: <Upload className="w-6 h-6" />,
+    //   title: "You can also use the platform to test your songs to see if fans like it",
+    //   description: "",
+    // }
   ];
 
   return (

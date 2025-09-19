@@ -71,10 +71,8 @@ const AboutSection = () => {
             variants={fadeInUp}
             className="text-lg sm:text-xl text-gray-700 mb-4 max-w-4xl mx-auto leading-relaxed"
           >
-            Tunenova helps artists grow their fanbase on Spotify, YouTube, and Apple Music. With just N10,000 spent monthly you can get 5000+ listeners every year 
-            You can also get real feedback from fans who love your type of music before you drop it just upload your snippets and start growing.
-
-
+            Tunenova helps artists grow their fanbase on Spotify, YouTube, and Apple Music. With just N10,000 spent monthly you can get 5000+ listeners on your Spotify every year.
+            You can also get real feedback from fans who love your type of music before you drop it. Just upload your snippets and start growing.
           </motion.p>
         </motion.div>
 

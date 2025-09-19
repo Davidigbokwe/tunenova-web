@@ -55,8 +55,7 @@ const Footer = () => {
               </motion.a>
               
               <motion.p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
-                Discover new music and earn money.<br />
-                Where fans get rewarded and artists grow.
+                Grow your fanbase on Spotify, Youtube and Apple Music.
               </motion.p>
 
               {/* Contact Info */}
