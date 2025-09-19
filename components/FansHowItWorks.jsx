@@ -2,9 +2,10 @@
 import React from 'react';
 import { Play, Music, DollarSign, Repeat } from 'lucide-react';
 import { motion } from 'framer-motion';
+// import dashboard from "../../public/dashboard3.svg"
 import Image from 'next/image';
 
-const HowItWorks = () => {
+const FansHowItWorks = () => {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -41,7 +42,7 @@ const HowItWorks = () => {
   return (
     <div className="px-6 md:px-12 lg:px-24 bg-gray-50" id='how-it-works'>
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
           initial="initial"
           whileInView="animate"
@@ -50,23 +51,23 @@ const HowItWorks = () => {
           {/* Left section */}
           <motion.div {...fadeIn} className="max-w-xl">
             <div className="flex items-center gap-3 mb-2 justify-center lg:justify-start">
-             
+
               <h1 className="text-3xl md:text-5xl font-bold text-gray-900">How it Works - Fans</h1>
             </div>
-           
+
             <p className="text-gray-700 text-base mb-8 text-center lg:text-left">
-              Discover new music and earn money for your time and attention.
+              Give feedback and earn money for your time and attention.
             </p>
-            
+
             {/* Dashboard Image */}
-            <motion.div 
+            <motion.div
               className=""
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <Image 
-                src="/fans.png" 
-                alt="IMAGE" 
+              <Image
+                src="/fans.png"
+                alt="IMAGE"
                 className="w-full h-auto rounded-lg"
                 width={1000}
                 height={1000}
@@ -84,7 +85,7 @@ const HowItWorks = () => {
                 height: 'calc(100% - 48px)'
               }}
             ></div>
-            
+
             {/* Steps */}
             <div className="space-y-16">
               {steps.map((step, index) => (
@@ -142,4 +143,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default FansHowItWorks;

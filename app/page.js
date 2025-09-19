@@ -1,10 +1,11 @@
-import React from 'react' 
+import React from 'react'
 import HeroSection from '@/components/Hero'
 import Navbar from '@/components/Navbar'
-import HowItWorks from '@/components/HowItWorks'
 import Artists from '@/components/Artists'
 import About from '@/components/About'
-import Refferal from '@/components/Refferal'
+import WhyArtists from '@/components/WhyArtists'
+import WhyArtistsUseTunenova from '@/components/WhyArtistsUseTunenova'
+import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 export default function page() {
   return (
@@ -12,9 +13,10 @@ export default function page() {
       <Navbar />
       <HeroSection />
       <About />
-      <HowItWorks />
       <Artists />
-      <Refferal />
+      <WhyArtists />
+      <WhyArtistsUseTunenova />
+      <CTA />
       <Footer />
     </div>
   )

@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const HeroSection = () => {
+const FansHeroSection = () => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -17,38 +17,38 @@ const HeroSection = () => {
 
   const textItem = {
     hidden: { opacity: 0, y: 30, scale: 0.9 },
-    show: { 
-      opacity: 1, 
-      y: 0, 
+    show: {
+      opacity: 1,
+      y: 0,
       scale: 1,
-      transition: { 
+      transition: {
         type: "spring",
         damping: 15,
         stiffness: 100,
-        duration: 0.8 
-      } 
+        duration: 0.8
+      }
     }
   };
 
   const buttonItem = {
     hidden: { opacity: 0, scale: 0.8, y: 40 },
-    show: { 
-      opacity: 1, 
-      scale: 1, 
+    show: {
+      opacity: 1,
+      scale: 1,
       y: 0,
-      transition: { 
+      transition: {
         type: "spring",
         damping: 10,
         stiffness: 120,
-        delay: 0.8 
-      } 
+        delay: 0.8
+      }
     }
   };
 
   return (
     <section id="hero" className="overflow-hidden rounded-3xl mx-2 sm:mx-4 md:mx-8 lg:mx-12 h-auto min-h-[60vh] flex flex-col md:flex-row">
       {/* Left side - Black background with content */}
-      <motion.div 
+      <motion.div
         className="bg-black text-white flex-1 relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none min-h-[320px] flex items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -56,45 +56,44 @@ const HeroSection = () => {
       >
         <div className="h-full flex items-center relative z-10 w-full">
           <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 md:py-16 lg:py-20 w-full">
-            <motion.div 
+            <motion.div
               className="max-w-lg w-full text-center md:text-left flex flex-col justify-center mx-auto md:mx-0"
               initial="hidden"
               animate="show"
               variants={container}
             >
-              <motion.h1 
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-2 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] text-white"
+              <motion.h1
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-2 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] text-white"
                 variants={textItem}
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
-                Grow Your Fanbase  
-
+                Give Feedback
               </motion.h1>
               <span className="block w-12 sm:w-16 h-1 rounded-full bg-gradient-to-r from-[#e10032] via-[#ff3c6f] to-[#c1002b] mx-auto md:mx-0 mb-2 sm:mb-3" />
-              <motion.h2 
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-[#e10032] via-[#ff3c6f] to-[#c1002b] bg-clip-text text-transparent animate-pulse"
+              <motion.h2
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-[#e10032] via-[#ff3c6f] to-[#c1002b] bg-clip-text text-transparent animate-pulse"
                 variants={textItem}
-                whileHover={{ 
-                  scale: 1.03, 
+                whileHover={{
+                  scale: 1.03,
                   textShadow: '0 0 20px rgba(239, 68, 68, 0.5)',
-                  transition: { duration: 0.2 } 
+                  transition: { duration: 0.2 }
                 }}
               >
-                On Spotify, Apple Music <span>& YouTube</span> 
+                Listen & Earn.
               </motion.h2>
-              <motion.p 
+              <motion.p
                 className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 md:mb-8 opacity-90"
                 variants={textItem}
               >
-                Get 4000+ listeners to your music on Spotify, YouTube & Apple Music
+                Earn up to ₦150,000 monthly!
               </motion.p>
-              <motion.div 
+              <motion.div
                 variants={buttonItem}
                 className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center md:items-start"
               >
                 {/* App Store Button */}
                 <motion.div
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     boxShadow: "0 15px 35px rgba(225, 0, 50, 0.25)",
                     transition: { duration: 0.2 }
@@ -110,7 +109,7 @@ const HeroSection = () => {
                   >
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-700" />
-                    
+
                     <div className="flex items-center gap-2 relative z-10">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-5 sm:h-5">
                         <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" fill="currentColor"/>
@@ -125,7 +124,7 @@ const HeroSection = () => {
 
                 {/* Google Play Button */}
                 <motion.div
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     boxShadow: "0 15px 35px rgba(225, 0, 50, 0.25)",
                     transition: { duration: 0.2 }
@@ -152,7 +151,7 @@ const HeroSection = () => {
                   >
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-700" />
-                    
+
                     <div className="flex items-center gap-2 relative z-10">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-5 sm:h-5">
                         <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" fill="currentColor"/>
@@ -197,7 +196,7 @@ const HeroSection = () => {
         />
       </motion.div>
       {/* Right side -- Image */}
-      <motion.div 
+      <motion.div
         className="flex-1 bg-contain bg-center bg-no-repeat relative overflow-hidden min-h-[220px] sm:min-h-[250px] md:min-h-0 flex items-center justify-center"
         style={{ backgroundImage: 'url("/hero.png")' }}
         initial={{ opacity: 0, x: 50 }}
@@ -209,4 +208,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default FansHeroSection;

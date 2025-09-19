@@ -4,11 +4,13 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -32,13 +34,23 @@ const Navbar = () => {
     };
   }, []);
 
-  const navItems = [
+  const defaultNavItems = [
     { name: 'Home', href: '/' },
-    { name: 'Artists', href: '/artists' },
-    { name: 'About', href: '/#about' },
+    { name: 'Fans', href: '/fans' },
     { name: 'How It Works', href: '/#how-it-works' },
+    { name: 'Community', href: 'https://chat.whatsapp.com/CDNwWlNKBRo9N8OKR2csCY?mode=ems_copy_c' },
     { name: 'Contact', href: '/#footer' },
   ];
+
+  const fansNavItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Fans', href: '/fans' },
+    { name: 'How it works', href: '/fans#how-it-works' },
+    { name: 'Community', href: 'https://chat.whatsapp.com/CDNwWlNKBRo9N8OKR2csCY?mode=ems_copy_c' },
+    { name: 'Contact', href: '/fans#footer' },
+  ];
+
+  const navItems = pathname === '/fans' ? fansNavItems : defaultNavItems;
   
   const linkVariants = {
     hover: {
