@@ -13,21 +13,20 @@ const WhyArtistsUseTunenova = () => {
 
   const images = [
     {
+      src: '/artist5.jpg',
+    },
+    {
       src: '/artist1.jpg',
-      title: 'Independent Artist',
     },
     {
-      src: '/artist2-.jpg',
-      title: 'Rising Star',
-    },
-    {
-      src: '/artist3.jpg',
-      title: 'Established Musician',
+      src: '/artist2.jpg',
     },
     {
       src: '/artist4.jpg',
-      title: 'Band Collective',
-    }
+    },
+    {
+      src: '/artist3.jpg',
+    },
   ];
 
   const openModal = (imageIndex) => {
@@ -57,7 +56,7 @@ const WhyArtistsUseTunenova = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
@@ -80,8 +79,6 @@ const WhyArtistsUseTunenova = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                  <h3 className="text-white font-bold text-lg">{image.title}</h3>
-                  <p className="text-gray-200 text-sm mt-1">{image.description}</p>
                   <div className="mt-3 text-center">
                     <span className="inline-block bg-blue-500 text-white text-xs px-3 py-1 rounded-full">
                       Click to view
@@ -101,7 +98,7 @@ const WhyArtistsUseTunenova = () => {
           variants={fadeIn}
         >
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            From independent musicians to established artists, Tunenova provides the tools and insights needed to connect with fans and grow your audience.
+            Tunenova provides the tools to grow your fanbase on Spotify, YouTube, & Apple Music.
           </p>
         </motion.div>
 
@@ -123,7 +120,7 @@ const WhyArtistsUseTunenova = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <button 
-                  className="absolute -top-12 right-0 text-white text-3xl z-10"
+                  className="absolute -top-2 -right-2 bg-black/70 hover:bg-black/90 text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl z-10 transition-all duration-200"
                   onClick={closeModal}
                 >
                   &times;
@@ -133,15 +130,13 @@ const WhyArtistsUseTunenova = () => {
                   <div className="relative aspect-video">
                     <Image
                       src={images[selectedImage].src}
-                      alt={images[selectedImage].title}
+                      alt={`Artist ${selectedImage + 1}`}
                       fill
                       className="object-contain"
                     />
                   </div>
-                  
+
                   <div className="p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">{images[selectedImage].title}</h3>
-                    <p className="text-gray-300">{images[selectedImage].description}</p>
                   </div>
                 </div>
                 

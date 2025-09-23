@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Target, Users, Shield, TrendingUp } from 'lucide-react';
+import { Target, Users, Shield, TrendingUp, DollarSign } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const WhyArtists = () => {
@@ -35,9 +35,9 @@ const WhyArtists = () => {
       color: "bg-[#e10032]"
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Know Your Fans",
-      description: "Get insights from real listeners in your genre.",
+      icon: <DollarSign className="w-8 h-8" />,
+      title: "Set your Budget",
+      description: "Your budget determines your reach",
       color: "bg-blue-500"
     },
     {
