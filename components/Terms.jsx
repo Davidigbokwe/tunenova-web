@@ -44,7 +44,7 @@ const TermsOfServicePage = () => {
       title: "3. Funds and Campaign Policy",
       content: [
         "Once money is added to your TuneNova Wallet, the funds are non-withdrawable and non-refundable. These funds are strictly meant for promoting your songs and campaigns on TuneNova. Artists are required to fully utilize their balance through promotions and campaigns. Any unused or remaining balance after a reasonable period may be forfeited and cannot be withdrawn, refunded, or transferred outside the platform.",
-        "By adding money to your TuneNova Wallet, you acknowledge and agree that all payments are final, non-reversible, and can only be used for promotional purposes within TuneNova.."
+        "By adding money to your TuneNova Wallet, you acknowledge and agree that all payments are final, non-reversible, and can only be used for promotional purposes within TuneNova."
       ]
     },
     {
