@@ -86,7 +86,7 @@ const HeroSection = () => {
                 className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 md:mb-8 opacity-90"
                 variants={textItem}
               >
-                Get 4000+ listeners to your music on Spotify, YouTube & Apple Music
+                Get 8000+ listeners to your music on Spotify, YouTube & Apple Music
               </motion.p>
               <motion.div 
                 variants={buttonItem}
