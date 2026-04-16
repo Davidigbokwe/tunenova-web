@@ -82,12 +82,10 @@ const Navbar = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
-              <motion.div key={index}>
+              <motion.div key={index} variants={linkVariants} whileHover="hover">
                 <Link
                   href={item.href}
                   className="text-gray-700 hover:text-[#e10032] transition-colors duration-300 cursor-pointer"
-                  variants={linkVariants}
-                  whileHover="hover"
                 >
                   {item.name}
                 </Link>
