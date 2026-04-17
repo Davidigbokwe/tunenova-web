@@ -41,16 +41,16 @@ const HeroSection = () => {
 
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-row gap-3">
             <a
               href="https://apps.apple.com/gh/app/tunenova-listen-and-earn/id6748253966"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-3 rounded-xl flex items-center justify-center gap-3 hover:opacity-90 transition-opacity min-w-[160px]"
+              className="bg-primary text-primary-foreground px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity min-w-[140px] sm:min-w-[160px] sm:px-6"
             >
-              <AppleIcon className="w-6 h-6" />
+              <AppleIcon className="w-5 h-5 sm:w-6 sm:h-6" />
               <div className="text-left">
-                <div className="text-xs font-medium">Download on the</div>
+                <div className="text-xs font-medium">Download on</div>
                 <div className="text-sm font-semibold">App Store</div>
               </div>
             </a>
@@ -58,9 +58,9 @@ const HeroSection = () => {
               href="https://play.google.com/store/apps/details?id=com.caribou97499.tunenova&pli=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-3 rounded-xl flex items-center justify-center gap-3 hover:opacity-90 transition-opacity min-w-[160px]"
+              className="bg-primary text-primary-foreground px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity min-w-[140px] sm:min-w-[160px] sm:px-6"
             >
-              <GooglePlayIcon className="w-6 h-6" />
+              <GooglePlayIcon className="w-5 h-5 sm:w-6 sm:h-6" />
               <div className="text-left">
                 <div className="text-xs font-medium">Get it on</div>
                 <div className="text-sm font-semibold">Google Play</div>

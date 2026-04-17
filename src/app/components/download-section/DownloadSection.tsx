@@ -24,7 +24,7 @@ const DownloadSection = () => {
               Ready to grow your fanbase?
             </h2>
             <p className="text-muted-foreground text-lg max-w-lg mx-auto mb-10">
-              Download Tunenova and start discovering music, sharing tracks, and earning rewards today.
+              Download Tunenova, promote your song and grow your fanbase on Spotify, Apple Music & YouTube.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
