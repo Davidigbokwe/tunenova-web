@@ -11,9 +11,9 @@ const WHATSAPP_LINK = "https://web.whatsapp.com/accept?code=CDNwWlNKBRo9N8OKR2cs
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Fans", href: "/fans" },
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "How It Works", href: "/#how-it-works" },
   { label: "Community", href: WHATSAPP_LINK, external: true },
-  { label: "Contact", href: "#contact-footer" },
+  { label: "Contact", href: "/#contact-footer" },
 ];
 
 const Navbar = () => {
