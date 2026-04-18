@@ -30,10 +30,10 @@ const HeroSection = () => {
           {/* <p className="text-primary font-medium text-sm tracking-widest uppercase mb-4">
             Discover · Share · Earn
           </p> */}
-          <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6">
-            Your Music.{" "}
-            <span className="text-gradient">Real Fans.</span>{" "}
-            Real Growth.
+          <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6 flex flex-col">
+            <span>Your Music.</span>
+            <span className="text-gradient">Real Fans.</span>
+            <span>Real Growth.</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
             Tunenova is a community driven music discovery platform that connects emerging artists with 
