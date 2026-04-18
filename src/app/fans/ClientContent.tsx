@@ -46,6 +46,71 @@ const ClientContent = () => {
     <div className="min-h-screen">
       <Navbar />
 
+      {/* Hero Section */}
+      <section className="pt-20 pb-8 md:pt-8 md:pb-8 bg-card/50">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="order-1 lg:order-1"
+            >
+              <h1 className="font-sans text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] mb-6 flex flex-col">
+                <span>Discover New</span>
+                <span className="text-gradient">Music</span>
+                <span className="text-red-500">Listen & Earn.</span>
+              </h1>
+              <p className="text-foreground text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-medium">
+                Earn up to ₦150,000 monthly!
+              </p>
+
+              <div className="flex flex-row gap-3">
+                <a
+                  href="https://apps.apple.com/gh/app/tunenova-listen-and-earn/id6748253966"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary text-primary-foreground px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity min-w-[140px] sm:min-w-[160px] sm:px-6"
+                >
+                  <AppleIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <div className="text-left">
+                    <div className="text-xs font-medium">Download on</div>
+                    <div className="text-sm font-semibold">App Store</div>
+                  </div>
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.caribou97499.tunenova&pli=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-red-500 text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity min-w-[140px] sm:min-w-[160px] sm:px-6"
+                >
+                  <GooglePlayIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <div className="text-left">
+                    <div className="text-xs font-medium">Get it on</div>
+                    <div className="text-sm font-semibold">Google Play</div>
+                  </div>
+                </a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative order-2 lg:order-2"
+            >
+              <img
+                src="/wallet.png"
+                alt="Tunenova app showing music discovery and fan experience"
+                loading="lazy"
+                className="rounded-2xl w-full max-w-md mx-auto lg:max-w-full object-contain"
+              />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-background/20 to-transparent" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Fans Section - Exact same as home page */}
       <section id="fans" className="py-24 md:py-32 bg-card/50">
         <div className="container">
