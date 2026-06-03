@@ -39,7 +39,7 @@ const CommunitySection = () => {
           {[
             {
               icon: Users,
-              value: "18,000+",
+              value: "30,000+",
               label: "Active Fans",
               desc: "Real fans discovering and sharing music every day.",
             },

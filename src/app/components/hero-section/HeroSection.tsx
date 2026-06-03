@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
             Tunenova is a community driven music discovery platform that connects emerging artists with 
-18,000+ engaged fans who discover music across streaming platforms.
+30,000+ engaged fans who discover music across streaming platforms.
 
           </p>
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
           className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x divide-border bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-4 md:p-0 md:border-none md:bg-transparent md:backdrop-blur-none"
         >
           {[
-            { value: "18,000+", label: "Active Fans" },
+            { value: "30,000+", label: "Active Fans" },
             { value: "100+", label: "Active Artists" },
             { value: "50,000+", label: "Streams Generated for Artists" },
             { value: "₦250k+", label: "Paid to Fans" },
