@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
             Tunenova is a community driven music discovery platform that connects emerging artists with 
-30,000+ engaged fans who discover music across streaming platforms.
+40,000+ engaged fans who discover music across streaming platforms.
 
           </p>
 
