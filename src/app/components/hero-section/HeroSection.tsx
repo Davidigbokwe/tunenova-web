@@ -77,10 +77,10 @@ const HeroSection = () => {
           className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x divide-border bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-4 md:p-0 md:border-none md:bg-transparent md:backdrop-blur-none"
         >
           {[
-            { value: "30,000+", label: "Active Fans" },
-            { value: "100+", label: "Active Artists" },
+            { value: "40,000+", label: "Active Fans" },
+            { value: "200+", label: "Active Artists" },
             { value: "50,000+", label: "Streams Generated for Artists" },
-            { value: "₦250k+", label: "Paid to Fans" },
+            { value: "₦300k+", label: "Paid to Fans" },
           ].map((stat) => (
             <div key={stat.label} className="text-center md:py-8 md:px-6 py-3">
               <p className="font-sans text-3xl md:text-5xl font-bold text-foreground tracking-tight">{stat.value}</p>

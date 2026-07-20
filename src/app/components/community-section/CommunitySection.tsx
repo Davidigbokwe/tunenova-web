@@ -39,7 +39,7 @@ const CommunitySection = () => {
           {[
             {
               icon: Users,
-              value: "30,000+",
+              value: "40,000+",
               label: "Active Fans",
               desc: "Real fans discovering and sharing music every day.",
             },
@@ -51,7 +51,7 @@ const CommunitySection = () => {
             },
             {
               icon: MessageCircle,
-              value: "₦250k+",
+              value: "₦300k+",
               label: "Paid to Fans",
               desc: "Total earnings paid to fans for discovering and sharing new music.",
             },
