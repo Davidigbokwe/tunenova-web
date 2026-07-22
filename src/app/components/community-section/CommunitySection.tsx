@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Users, Trophy } from "lucide-react";
 
 const CommunitySection = () => {
   return (
@@ -38,19 +37,16 @@ const CommunitySection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              icon: Users,
               value: "40,000+",
               label: "Active Fans",
               desc: "Real fans discovering and sharing music every day.",
             },
             {
-              icon: Trophy,
               value: "50,000+",
               label: "Streams Generated for Artists",
               desc: "Total streams generated for artists through fan discovery on Spotify, Youtube & Apple Music.",
             },
             {
-              icon: MessageCircle,
               value: "₦300k+",
               label: "Paid to Fans",
               desc: "Total earnings paid to fans for discovering and sharing new music.",
@@ -64,10 +60,7 @@ const CommunitySection = () => {
               transition={{ delay: i * 0.15 }}
               className="bg-card border border-border rounded-2xl p-8 text-center hover:border-primary/40 transition-colors"
             >
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
-                <item.icon className="w-7 h-7 text-primary" />
-              </div>
-              <p className="font-display text-3xl font-bold text-primary mb-1">{item.value}</p>
+              <p className="font-display text-3xl font-bold text-foreground mb-1">{item.value}</p>
               <h3 className="font-semibold mb-2">{item.label}</h3>
               <p className="text-muted-foreground text-sm">{item.desc}</p>
             </motion.div>
